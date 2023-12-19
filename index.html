@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Florencia I.">
+    <meta name="description" content="formulario de curriculum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <a href="../formularios/index.html"> Volver al inicio</a>
+    <form action="/php/insertar_cv.php" method="get">
+        <h1>Rellena tu CV</h1>
+        <label for=”nombre”> Nombre: </label>
+        <br>
+        <input type="text" name="nombre" id="nombre" value="" size="25" maxlength="30"/><br/>
+        <label for=”apellidos”> Apellidos: </label><br/>
+        <input type="text" name="apellidos" id="apellidos" value="" size="40" maxlength="80"/><br/>
+        <label for="contrasena"> Contraseña: </label> <br/>
+        <input type="password" name="contrasena" id="contrasena" value="" size="25" maxlength="10"/><br/>
+        <label for=”dni”> DNI: </label><br/>
+        <input type="text" name="dni" id="dni" value="" size="25" maxlength="9"/><br/><br/>
+        <label for="sex"> Sexo: </label> <br/>
+        <input type="radio" name="sexo" id="sex" value="hombre" checked="checked" /> Hombre <br/>
+        <input type="radio" name="sexo" id="sex" value="mujer" /> Mujer
+        <br/>
+        <br/>
+        <label for="imagen"> Incluir mi foto </label> 
+        <input type="file" name="adjunto" id="imagen" value="" size="25"/>
+        <br/>
+        <br/>
+        <input name="boletin_novedades" type="checkbox" value="boletín" checked="checked" />
+        <label for="sub">Suscribirme al boletín de novedades </label><br/><br/>
+        
+        <input type="button" name="guardar" value="Guardar Cambios" />
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+        
+    </form>
+</body>
+</html>
